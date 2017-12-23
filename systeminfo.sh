@@ -1,5 +1,17 @@
 #!/bin/bash
-#
+#------------------------------------------#
+# FileName:             systeminfo.sh
+# Revision:             1.1.0
+# Date:                 2017-07-14 04:55:33
+# Author:               vinsent
+# Email:                hyb_admin@163.com
+# Website:              www.vinsent.cn
+# Description:          This script can achieve ssh password-free login, 
+#                       and can be deployed in batches, configuration
+#------------------------------------------#
+# Copyright:            2017 vinsent
+# License:              GPL 2+
+#------------------------------------------#
 echo "My Computer's Massage:"
 echo "HostName is : `hostname`"
 c=`ifconfig | egrep -o "([0-9]{1,3}[.]){3}[0-9]{1,3}" | head -n 1`
